@@ -1,43 +1,59 @@
+# 📦 Abstract Data Types (ADT)
 
-# Abstract Data Types
+_Repo ini berisi latihan implementasi berbagai **Abstract Data Types (ADT)** dalam Java._
 
-Latihan implementasi ADT
+---
 
-Current ADTs in this repo:
+## 📚 Daftar ADT yang Diimplementasikan
 
-## 1. List
-Kumpulan dari elemen yang memperbolehkan elemen duplikat. Jenis-jenisnya:
-### a. Array List
-List yang menggunakan struktur data Array.
-### b. Linked List
-List yang menggunakan Node yang bisa terhubung satu sama lain sebagai struktur datanya.
+### 1. 📝 List  
+Struktur data yang merepresentasikan kumpulan elemen **(boleh duplikat)**.  
+#### Jenis-jenis:
+- **Array List**  
+  Menggunakan struktur data **array** untuk menyimpan elemen secara berurutan.
+- **Linked List**  
+  Menggunakan **node-node** yang saling terhubung sebagai strukturnya.
 
-## 2. Queue
-Sebuah abstraksi untuk merepresentasikan sebuah antrian elemen-elemen. Jenis-jenisnya: 
-### a. Static Queue
-Queue yang menggunakan Array biasa dengan panjang yang sudah ditentukan (statis).
-### b. Dynamic Queue
-Queue yang menggunakan struktur data Linked List yang ukurannya bisa berkembang secara dinamis.
+---
 
-## 3. Set
-Merepresentasikan kumpulan elemen-elemen unik (tidak ada yang duplikat). Jenis-jenisnya:
-### a. Static Set
-Set yang menggunakan Array biasa dengan panjang yang sudah ditentukan (statis).
-### b. Dynamic Set
-Set yang menggunakan Array dinamis (Array List) yang ukurannya bisa berkembang secara dinamis.
+### 2. ⏳ Queue  
+Merepresentasikan **antrian elemen** dengan prinsip **FIFO** (_First In, First Out_).  
+#### Jenis-jenis:
+- **Static Queue**  
+  Menggunakan **array statis** dengan ukuran tetap.
+- **Dynamic Queue**  
+  Menggunakan **linked list** sehingga ukurannya bisa bertambah atau berkurang secara dinamis.
 
-## 4. Stack
-Merepresentasikan tumpukan elemen-elemen. Jenis-jenisnya:
-### a. Static Stack
-Stack yang menggunakan Array biasa dengan panjang yang sudah ditentukan (statis).
-### b. Dynamic Stack
-Stack yang menggunakan Array dinamis (Array List) yang ukurannya bisa berkembang secara dinamis.
+---
 
-## 5. Tree
-Merepresentasikan simpul-simpul (Nodes) yang bercabang seperti pohon yang bercabang. Jenis-jenisnya:
-### a. Binary Search Tree (BSTree)
-Tree yang tiap simpul induknya hanya bisa memiliki dua simpul anak. 
+### 3. 🚫 Set  
+Kumpulan elemen **unik** (tidak mengizinkan duplikat).  
+#### Jenis-jenis:
+- **Static Set**  
+  Menggunakan **array statis**.
+- **Dynamic Set**  
+  Menggunakan **array list dinamis** yang dapat menyesuaikan ukuran sesuai kebutuhan.
 
-Setiap ada simpul baru, dia akan disimpan secara terurut mengikuti aturan Binary Search:
+---
 
-> Tiap simpul anak sebelah kiri lebih kecil dan tiap simpul anak sebelah kanan lebih besar dari simpul induknya.
+### 4. 📚 Stack  
+Merepresentasikan **tumpukan elemen** dengan prinsip **LIFO** (_Last In, First Out_).  
+#### Jenis-jenis:
+- **Static Stack**  
+  Dibangun dengan **array statis**.
+- **Dynamic Stack**  
+  Dibangun dengan **array list dinamis**.
+
+---
+
+### 5. 🌳 Tree  
+Struktur data hierarkis yang merepresentasikan **simpul-simpul (nodes) yang bercabang** seperti pohon.  
+#### Jenis:
+- **Binary Search Tree (BST)**  
+  Tree di mana setiap simpul induk hanya memiliki **maksimal dua anak**, dengan aturan:
+
+  > Setiap simpul baru akan disisipkan secara terurut:  
+  > - Simpul anak **sebelah kiri** selalu **lebih kecil** dari induknya.  
+  > - Simpul anak **sebelah kanan** selalu **lebih besar** dari induknya.
+
+---
